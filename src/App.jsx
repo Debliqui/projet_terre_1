@@ -1,10 +1,15 @@
+import { BrowserRouter, Routes, Route } from "react-router"
+import Home from "./pages/Home"
+
 import "./App.scss"
 
 function App() {
   return (
-    <>
-      <h1>Welecome in Wearth 1!</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
