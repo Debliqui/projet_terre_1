@@ -1,3 +1,81 @@
+@mixin screen_tablet {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin screen_mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
 body {
   background: var(--background-secondary);
+}
+
+.banner {
+  width: 100%;
+  height: 800px;
+  background: url(../../assets/a-sky-view-of-earth-from-suomi-npp_16611703184_o~medium.jpg)
+    no-repeat center center;
+  display: flex;
+  align-items: flex-end;
+  @include screen_tablet {
+    background-size: cover;
+    height: 550px;
+  }
+  @include screen_mobile {
+    height: 400px;
+  }
+
+  &__content {
+    background: var(--background-first);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+    margin-bottom: 90px;
+    @include screen_tablet {
+      padding-left: 20px;
+    }
+    @include screen_mobile {
+      width: 100%;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-bottom: 0;
+      align-items: center;
+      padding-left: 0;
+    }
+    &__title {
+      font-family: var(--header-font);
+      font-style: normal;
+      font-weight: var(--header-font-weight);
+      font-size: var(--header-font-size);
+      line-height: var(--header-line-height);
+      padding-left: 0;
+      padding-bottom: 12px;
+      color: #0a2b58;
+      @include screen_tablet {
+        padding: 12px;
+      }
+    }
+    &__description {
+      width: 680px;
+      color: var(--body-color);
+      padding-bottom: 24px;
+      text-align: left;
+      @include screen_tablet {
+        width: 380px;
+        padding-bottom: 12px;
+      }
+      @include screen_mobile {
+        text-align: center;
+      }
+    }
+  }
 }

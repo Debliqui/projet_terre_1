@@ -1,4 +1,17 @@
+@mixin screen_desktop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
 #root {
   margin: 0 auto;
   text-align: center;
+}
+
+main {
+  max-width: 1440px;
+  @include screen_desktop {
+    margin: auto;
+  }
 }
