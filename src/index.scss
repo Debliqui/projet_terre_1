@@ -1,0 +1,69 @@
+:root {
+  /*Colors*/
+  --background-white: white;
+  --background-first: gray;
+  --background-secondary: black;
+  --body-color: white;
+  --body-color-secondary: black;
+  /*Text configuration*/
+  --body-font: "Roboto";
+  --body-highlight-font: "Roboto";
+  --heder-font: "Bona Nova SC";
+  --title-font: "Bona Nova SC";
+  --body-font-weight: 400;
+  --body-highlight-font-weight: 600;
+  --header-font-weight: 400;
+  --title-font-weight: 400;
+  --body-font-size: 1.25rem;
+  --body-highlight-font-size: 1.25rem;
+  --header-font-size: 4.5rem;
+  --title-font-size: 1.5rem;
+  --body-line-height: 1.5rem;
+  --body-highlight-line-height: 1.5rem;
+  --header-line-height: 5.375rem;
+  --title-line-height: 1.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    /* Mobile Variables */
+    --body-font-size: 1rem;
+    --body-highlight-font-size: 1rem;
+    --header-font-size: 2.5rem;
+    --title-font-size: 1.25rem;
+    --body-line-height: 1.25rem;
+    --body-highlight-line-height: 1.25rem;
+    --header-line-height: 3rem;
+    --title-line-height: 1.5rem;
+  }
+}
+
+body {
+  font-family: var(--body-font);
+  font-style: normal;
+  font-weight: var(--body-font-weight);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+}
+
+h1 {
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: var(--header-font-weight);
+  font-size: var(--header-font-size);
+  line-height: var(--header-line-height);
+  // color: var(--body-color);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+h2 {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: var(--title-font-weight);
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+  color: var(--body-color);
+  text-align: center;
+  padding: 1.5rem;
+}
