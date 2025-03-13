@@ -26,6 +26,7 @@ body {
     height: 550px;
   }
   @include screen_mobile {
+    background-size: contain;
     height: 400px;
   }
 
