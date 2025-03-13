@@ -1,0 +1,56 @@
+@mixin screen_tablet {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin screen_mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & h1 {
+    padding: 0 0 0 12px;
+    display: flex;
+    & img {
+      width: 120px;
+      @include screen_tablet {
+        width: 100px;
+      }
+    }
+  }
+  .nav-header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    margin-right: 12px;
+    @include screen_mobile {
+      justify-content: end;
+    }
+    & a:hover {
+      background-color: rgb(32, 32, 32);
+    }
+    & a[aria-current="page"] {
+      font-weight: 400;
+      border-bottom: 2px solid white;
+    }
+    & a {
+      font-size: 1rem;
+      font-weight: 300;
+      min-width: 70px;
+      padding: 21px 18px;
+      text-decoration: none;
+      color: var(--body-color);
+      @include screen_mobile {
+        padding: 12px;
+      }
+    }
+  }
+}

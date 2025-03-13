@@ -1,5 +1,5 @@
-import Header from "../../component/Header"
-import Footer from "../../component/Footer"
+import Header from "../../container/Header"
+import Footer from "../../container/Footer"
 
 import "./index.scss"
 import Banner from "../../component/Banner"
