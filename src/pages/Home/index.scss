@@ -16,18 +16,17 @@ body {
 
 .banner {
   width: 100%;
-  height: 800px;
+  height: 100vh;
   background: url(../../assets/a-sky-view-of-earth-from-suomi-npp_16611703184_o~medium.jpg)
     no-repeat center center;
   display: flex;
   align-items: flex-end;
   @include screen_tablet {
     background-size: cover;
-    height: 550px;
   }
   @include screen_mobile {
     background-size: contain;
-    height: 400px;
+    height: 500px;
   }
 
   &__content {
@@ -77,6 +76,33 @@ body {
       @include screen_mobile {
         text-align: center;
       }
+    }
+  }
+}
+
+.grid {
+  background: url(../../assets/sky_dark.webp) no-repeat bottom/cover;
+  padding: 60px;
+  @include screen_mobile() {
+    padding: 1.5rem;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 5rem;
+    @include screen_mobile() {
+      margin-bottom: 0;
+    }
+  }
+  &__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 18.75rem 18.75rem;
+    gap: 15px;
+    @include screen_mobile {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 18.75rem);
+      gap: 15px;
     }
   }
 }
