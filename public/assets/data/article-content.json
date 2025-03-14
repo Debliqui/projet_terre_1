@@ -1,11 +1,14 @@
 [
   {
     "id": "space",
+    "nasa": true,
     "label": "L'espace",
     "src": "/assets/grid/as4-01-410~small.webp",
+    "ref": "as4-01-410",
     "alt": "Terre vue de l'espace",
     "title": "L'espace",
     "subtitle": "Ce qui entour notre planète",
-    "description": "Vue de l'espace, notre planète offre un spectacle de couleur fascinant.\nLe bleu profond des océans, entrecoupé par la mosaïque des continents, témoigne de la richesse de la vie et de la diversité des écosystèmes.\nLes aurores boréales, avec leurs danses de lumières colorées, peignent le ciel polaire de couleurs vives, tandis que les ouragans dessinent des spirales majestueuses sur l'horizon.\nLa nuit, les villes s'illuminent comme des constellations, rappelant l'activité incessante de l'humanité.\nChaque vue de la Terre depuis l'espace est un rappel de sa fragilité et de la nécessité de la préserver pour les générations futures.\nC'est une perspective qui unit l'humanité dans un sentiment commun de responsabilité et d'émerveillement."
+    "hookParagraph1": "Vue de l'espace",
+    "paragraph1": ", notre planète offre un spectacle de couleur fascinant.\nLe bleu profond des océans, entrecoupé par la mosaïque des continents, témoigne de la richesse de la vie et de la diversité des écosystèmes.\nLes aurores boréales, avec leurs danses de lumières colorées, peignent le ciel polaire de couleurs vives, tandis que les ouragans dessinent des spirales majestueuses sur l'horizon.\nLa nuit, les villes s'illuminent comme des constellations, rappelant l'activité incessante de l'humanité.\nChaque vue de la Terre depuis l'espace est un rappel de sa fragilité et de la nécessité de la préserver pour les générations futures.\nC'est une perspective qui unit l'humanité dans un sentiment commun de responsabilité et d'émerveillement."
   }
 ]

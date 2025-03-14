@@ -10,8 +10,8 @@
   }
 }
 
-header {
-  background-color: transparent;
+.header-container {
+  background-color: var(--background-secondary);
   display: flex;
   justify-content: space-between;
   align-items: center;

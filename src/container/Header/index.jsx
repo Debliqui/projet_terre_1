@@ -5,7 +5,7 @@ import "./index.scss"
 
 export default function Header() {
   return (
-    <header>
+    <header className="header-container">
       <img src={Logo} alt="" />
       <nav className="nav-header">
         <NavLink to="/" end>
