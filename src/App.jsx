@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router"
+import DataProvider from "./context/DataProvider"
 import Home from "./pages/Home"
 
 import "./App.scss"
@@ -6,9 +7,11 @@ import "./App.scss"
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <DataProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </DataProvider>
     </BrowserRouter>
   )
 }
