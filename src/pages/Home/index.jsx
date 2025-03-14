@@ -6,6 +6,7 @@ import CardLink from "../../component/CardLink"
 import { useData } from "../../hook.js"
 
 import "./index.scss"
+import BgBanner from "../../assets/a-sky-view-of-earth-from-suomi-npp_16611703184_o~medium.webp"
 
 export default function Home() {
   const { data, error } = useData()
@@ -15,7 +16,7 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <Banner>
+        <Banner src={BgBanner}>
           <div className="banner__content">
             <h2 className="banner__content__title">Bienvenue sur Terre 1</h2>
             <p className="banner__content__description">
