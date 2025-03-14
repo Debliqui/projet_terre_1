@@ -15,14 +15,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  & h1 {
+  & img {
     padding: 0 0 0 12px;
-    display: flex;
-    & img {
+    width: 130px;
+    @include screen_tablet {
       width: 120px;
-      @include screen_tablet {
-        width: 100px;
-      }
     }
   }
   .nav-header {
