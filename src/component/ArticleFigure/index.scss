@@ -1,0 +1,24 @@
+.image-container {
+  width: 50%;
+  display: inline-block;
+  margin: 20px 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  & img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  & .image-caption {
+    background-color: #f8f8f8;
+    color: #555;
+    font-size: 0.9rem;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+}
