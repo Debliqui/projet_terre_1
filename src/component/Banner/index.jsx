@@ -1,3 +1,7 @@
-export default function Banner({ children }) {
-  return <section className="banner">{children}</section>
+export default function Banner({ children, src }) {
+  return (
+    <section style={{ backgroundImage: `url(${src})` }} className="banner">
+      {children}
+    </section>
+  )
 }
