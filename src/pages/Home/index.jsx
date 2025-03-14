@@ -18,7 +18,7 @@ export default function Home() {
       <main>
         <Banner src={BgBanner}>
           <div className="banner__content">
-            <h2 className="banner__content__title">Bienvenue sur Terre 1</h2>
+            <h1 className="banner__content__title">Bienvenue sur Terre 1</h1>
             <p className="banner__content__description">
               Vous trouverez ici toutes les informations nécessaires pour vous
               intégrer dans la société terrienne
